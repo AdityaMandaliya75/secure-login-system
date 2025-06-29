@@ -1,5 +1,5 @@
 # =========================================
-# Flask Secure Login System (Clean Version)
+#         Flask Secure Login System
 # =========================================
 
 from bson import ObjectId
@@ -20,7 +20,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'adityamandalia123@gmail.com'
-app.config['MAIL_PASSWORD'] = 'ntum qdyj opwy nuim'
+app.config['MAIL_PASSWORD'] = 'Your MAIL_PASSWORD'
 app.config['MAIL_DEFAULT_SENDER'] = 'adityamandalia123@gmail.com'
 
 mail = Mail(app)
@@ -34,7 +34,7 @@ users = db.users
 serializer = URLSafeTimedSerializer(app.secret_key)
 
 # reCAPTCHA Config
-RECAPTCHA_SECRET = "6LdR33ArAAAAADwaz2m8SBqQTCc6oc8eevxOUHd-"
+RECAPTCHA_SECRET = "Your RECAPTCHA_SECRET"
 
 def verify_recaptcha(response_token):
     payload = {'secret': RECAPTCHA_SECRET, 'response': response_token}

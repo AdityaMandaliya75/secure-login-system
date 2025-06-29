@@ -1,0 +1,11 @@
+flask_mail
+itsdangerous
+pymongo
+flask
+datetime
+bcrypt
+flask_cors
+flask_jwt_extended
+flask_restful
+requests
+random

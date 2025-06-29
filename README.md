@@ -47,12 +47,6 @@ The frontend consists of multiple HTML pages with role-specific and secure workf
 | `verify_otp.html`       | Enter OTP sent to registered email                                      |
 | `reset_password.html`   | Set a new password after OTP verification                               |
 
-### Features
-
-- Responsive layout using CSS
-- Frontend validation for email and password
-- Role-based navigation
-
 ---
 
 ## 🧠 3. Backend Structure
@@ -65,8 +59,8 @@ The frontend consists of multiple HTML pages with role-specific and secure workf
   project/
   ├── static/
   ├── templates/
+  ├── screenshots/
   ├── app.py
-  ├── config.py
   └── README.md
   ```
 
@@ -74,58 +68,83 @@ The frontend consists of multiple HTML pages with role-specific and secure workf
 
 ## 🔐 4. Core Features
 
-### ✅ User Registration
-- Password hashing with `bcrypt`
-- Role selection
-- Input validation
-
-### ✅ User Login
-- Session management
-- Email and password verification
-- Role-based redirection
-
-### ✅ RBAC (Role-Based Access Control)
-- Admin can view all users
-- Users have limited dashboard access
-- Secure routing using decorators
+- Secure Registration with password hashing (`bcrypt`)
+- Role selection (Admin/User)
+- Login with session-based authentication
+- Role-Based Access Control (RBAC)
+- Forgot Password with security question, OTP, and reset
+- CAPTCHA protection
+- Account lockout after failed attempts
 
 ---
 
 ## 🛡️ 5. Security Enhancements
 
 - Input sanitization
-- CAPTCHA (optional)
-- Account lockout after 3 failed attempts
-- Secure session cookies
+- CAPTCHA (Google reCAPTCHA or custom)
+- Lockout system after 3 failed logins
+- Secure cookies & sessions
 
 ---
 
-## 📷 6. Screenshots
+## ✅ Pages and Demonstrations
 
-> 📁 Store all screenshots inside a `screenshots/` folder. Suggested filenames below:
+The following are the screenshots demonstrating core UI pages:
 
-| Page/File Name           | Screenshot Description                     | File Name Suggestion               |
-|--------------------------|---------------------------------------------|------------------------------------|
-| `index.html`             | Landing or home page                        | `screenshots/index.png`            |
-| `login.html`             | Login form                                  | `screenshots/login.png`            |
-| `register.html`          | Registration form with role selection       | `screenshots/register.png`         |
-| `admin_dashboard.html`   | Admin dashboard showing users               | `screenshots/admin_dashboard.png`  |
-| `user_dashboard.html`    | Basic user dashboard                        | `screenshots/user_dashboard.png`   |
-| `forgot_password.html`   | Forgot password entry page                  | `screenshots/forgot_password.png`  |
-| `security_question.html` | Answer security question page               | `screenshots/security_question.png`|
-| `verify_otp.html`        | OTP verification page                       | `screenshots/verify_otp.png`       |
-| `reset_password.html`    | New password input form                     | `screenshots/reset_password.png`   |
+### 🏠 Index Page
+![Index Page](screenshots/index.png)
+
+---
+
+### 🔐 Login Page
+![Login Page](screenshots/login.png)
+
+---
+
+### 📝 Register Page
+![Register Page](screenshots/register.png)
+
+---
+
+### 🛠️ Admin Dashboard
+![Admin Dashboard](screenshots/admin_dashboard.png)
+
+---
+
+### 👤 User Dashboard
+![User Dashboard](screenshots/user_dashboard.png)
+
+---
+
+### 🔒 Forgot Password
+![Forgot Password](screenshots/forgot_password.png)
+
+---
+
+### ❓ Security Question
+![Security Question](screenshots/security_question.png)
+
+---
+
+### ✉️ OTP Verification
+![Verify OTP](screenshots/verify_otp.png)
+
+---
+
+### 🔁 Reset Password
+![Reset Password](screenshots/reset_password.png)
 
 ---
 
 ## ⚙️ 7. Installation and Usage
 
-### 🔧 Prerequisites
+### Prerequisites
+
 - Python 3.8+
 - MongoDB
 - Git
 
-### 🚀 Setup Instructions
+### Setup Instructions
 
 ```bash
 # Clone the repository
@@ -134,7 +153,7 @@ cd secure-login-system
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
@@ -142,8 +161,6 @@ pip install -r requirements.txt
 # Run the app
 python app.py
 ```
-
-Update `config.py` with your MongoDB URI.
 
 ---
 
@@ -170,12 +187,12 @@ Update `config.py` with your MongoDB URI.
 
 ## 📎 GitHub Repository
 
-> 🔗 [https://github.com/<your-username>/secure-login-system](https://github.com/<your-username>/secure-login-system)
+> 🔗 [https://github.com/AdityaMandaliya75/secure-login-system](https://github.com/AdityaMandaliya75/secure-login-system)
 
 ---
 
 ## 📧 Contact
 
-For queries, raise an issue or contact: **[your.email@example.com](mailto:your.email@example.com)**
+For queries, raise an issue or contact: **[adityamandalia123@example.com](mailto:adityamandalia123@example.com)**
 
 ---
